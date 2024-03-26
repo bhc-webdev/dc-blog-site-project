@@ -1,0 +1,17 @@
+.redBackground {
+    background-color: #e52626;
+    color: white;
+}
+
+.redBackground:hover {
+    background-color: #f08484;
+}
+
+.blueGradientBackground {
+    background:  linear-gradient(rgb(0, 51, 133), rgb(0, 37, 97));
+    color: white;
+}
+
+.lightBlueBackground {
+    background-color: #E9F2FF;
+}
