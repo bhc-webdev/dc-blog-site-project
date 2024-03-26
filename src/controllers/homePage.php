@@ -13,6 +13,6 @@ class Blogs
 
     public function show()
     {
-        require "views/blogShow.php";
+        require "views/home.php";
     }
 }
