@@ -6,15 +6,15 @@ class Blog
   {
     // $dsn = "mysql:
     // host=mywebtraining.net;
-    // dbname=sherd_SteveHarvey;
+    // dbname=sherd_RickJames;
     // charset=utf8;
     // port=21";
     $dsn = "mysql:
-        host=localhost;
+        host=mywebtraining.net;
         dbname=blogsite;
         charset=utf8;
         port=3304";
-    $pdo = new PDO($dsn, "adv_php_user", "secret", [
+    $pdo = new PDO($dsn, "sherd_RickJames", "QnepmMdV", [
       PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]);
 
