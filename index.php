@@ -7,8 +7,8 @@ require "src/router.php";
 $router = new Router;
 
 // Routes
-$router->add("/", ["controller" => "homePage", "action" => "show"]);
-$router->add("/blogs", ["controller" => "homePage", "action" => "index"]);
+$router->add("/", ["controller" => "blogs", "action" => "show"]);
+$router->add("/blogs", ["controller" => "blogs", "action" => "index"]);
 
 $params = $router->matchRoute($path);
 
