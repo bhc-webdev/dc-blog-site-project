@@ -8,7 +8,7 @@ class Blogs
         $model = new Blog;
         $blogs = $model->getData();
 
-        require "views/blogList.php";
+        require "views/home.php";
     }
 
     public function show()
