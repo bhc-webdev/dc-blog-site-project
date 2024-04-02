@@ -7,7 +7,7 @@ require "src/router.php";
 $router = new Router;
 
 // Routes
-$router->add("/", ["controller" => "blogs", "action" => "show"]);
+$router->add("/", ["controller" => "blogs", "action" => "index"]);
 $router->add("/blogs", ["controller" => "blogs", "action" => "index"]);
 
 $params = $router->matchRoute($path);
@@ -17,9 +17,6 @@ if ($params === false) {
     exit("No matching route");
 
 }
-
-$controller = $params["controller"];
-$action = $params["action"];
 
 $controller = $params["controller"];
 $action = $params["action"];
