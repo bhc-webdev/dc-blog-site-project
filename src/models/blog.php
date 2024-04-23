@@ -14,7 +14,7 @@ class Blog
         dbname=blogsite;
         charset=utf8;
         port=3304";
-    $pdo = new PDO($dsn, "sherd_RickJames", "QnepmMdV", [
+    $pdo = new PDO($dsn, "adv_php_user", "secret", [
       PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]);
 
