@@ -37,40 +37,23 @@
   </div>
   <div class="container">
     <div class="row mb-2">
-    <?php foreach ($blogs as $blog) : ?>
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <h3 class="mb-0">
-              <a class="text-dark" href="#"><?= htmlspecialchars($blog["title"]) ?></a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 12</div>
-            <p class="card-text mb-auto">
-              <?= htmlspecialchars(mb_strlen($blog["text"]) > 200) ? mb_substr($blog["text"], 0, 140) . '...' : $blog["text"]; ?>
-            </p>
-            <a href="#">Continue reading</a>
+      <?php foreach ($blogs as $blog) : ?>
+        <div class="col-md-6">
+          <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+            <div class="card-body d-flex flex-column align-items-start">
+              <h3 class="mb-0">
+                <a class="text-dark" href="#"><?= htmlspecialchars($blog["title"]) ?></a>
+              </h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">
+                <?= htmlspecialchars(mb_strlen($blog["text"]) > 200) ? mb_substr($blog["text"], 0, 140) . '...' : $blog["text"]; ?>
+              </p>
+              <a href="#">Continue reading</a>
+            </div>
+            <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap" />
           </div>
-          <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap" />
         </div>
-      </div>
       <?php endforeach; ?>
-      <div class="col-md-6">
-        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
-            <strong class="d-inline-block mb-2 text-success">Design</strong>
-            <h3 class="mb-0">
-              <a class="text-dark" href="#">Post title</a>
-            </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content.
-            </p>
-            <a href="#">Continue reading</a>
-          </div>
-          <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap" />
-        </div>
-      </div>
     </div>
   </div>
 
