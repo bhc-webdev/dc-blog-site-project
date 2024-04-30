@@ -6,7 +6,7 @@
         and more!
       </p>
       <button class="btn redBackground btn-lg" type="button">
-        All Blog Posts
+      <a href="blogs" style="color: inherit; text-decoration: inherit; font-weight: inherit;">All Blog Posts</a> 
       </button>
     </div>
   </div>
@@ -23,9 +23,9 @@
               <p class="card-text mb-auto">
                 <?= htmlspecialchars(mb_strlen($blog["text"]) > 200) ? mb_substr($blog["text"], 0, 140) . '...' : $blog["text"]; ?>
               </p>
-              <a href="#">Continue reading</a>
+              <a href="./blogs/<?= htmlspecialchars($blog['id']) ?>/show">Continue reading</a>
             </div>
-            <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap" />
+            <img class="card-img-right flex-auto d-none d-lg-block"src="images/<?= $blog['imageLink']?>.jpg" alt="Blog Image" />
           </div>
         </div>
       <?php endforeach; ?>
