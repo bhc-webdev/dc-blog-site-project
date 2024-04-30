@@ -25,6 +25,10 @@ html {
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
 }
+
+.blogText {
+  margin: 1vw 8vw;
+}
 .footer {
   position: absolute;
   bottom: 0;
