@@ -49,6 +49,7 @@ class Blogs
         echo $viewer->render("shared/header.php", [
             "title" => "Blog"
         ]);
+        echo $viewer->render("shared/nav.php");
 
         // pass db result set to view in array named "blog"
         echo $viewer->render("Blogs/show.php", [
