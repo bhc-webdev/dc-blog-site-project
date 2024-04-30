@@ -32,6 +32,8 @@ class Blogs
         echo $viewer->render("Blogs/index.php", [
             "blogs" => $blogs
         ]);
+
+        echo $viewer->render("shared/footer.php");
     }
 
     public function show(string $id = NULL)
@@ -55,5 +57,7 @@ class Blogs
         echo $viewer->render("Blogs/show.php", [
             "blog" => $blog
         ]);
+
+        echo $viewer->render("shared/footer.php");
     }
 }

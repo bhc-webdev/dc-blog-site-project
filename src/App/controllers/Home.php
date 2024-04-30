@@ -29,6 +29,8 @@ class Home
             "blogs" => $blogs
         ]);
 
+        echo $viewer->render("shared/footer.php");
+
         // echo $viewer->render("shared/blogs.php", [
         //     "blogs" => $blogs
         // ]);
