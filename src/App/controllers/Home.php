@@ -23,8 +23,14 @@ class Home
             "title" => "Home"
         ]);
 
-        echo $viewer->render("Home/index.php",  [
+        echo $viewer->render("shared/nav.php");
+
+        echo $viewer->render("Home/index.php", [
             "blogs" => $blogs
         ]);
+
+        // echo $viewer->render("shared/blogs.php", [
+        //     "blogs" => $blogs
+        // ]);
     }
 }

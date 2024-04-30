@@ -20,15 +20,15 @@ class Blogs
         if (!$blogs) {
 
             exit("Blog not found");
-            
         }
-                $viewer = new Viewer;
+        $viewer = new Viewer;
 
         echo $viewer->render("shared/header.php", [
             "title" => "Blogs"
         ]);
 
-        // pass db result set to view in array named "products"
+        echo $viewer->render("shared/nav.php");
+
         echo $viewer->render("Blogs/index.php", [
             "blogs" => $blogs
         ]);
@@ -40,8 +40,10 @@ class Blogs
 
         $blog = $model->find($id);
 
-        if (!$blog) { exit("Blog not found"); }
-               
+        if (!$blog) {
+            exit("Blog not found");
+        }
+
         $viewer = new Viewer;
 
         echo $viewer->render("shared/header.php", [
