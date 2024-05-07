@@ -1,0 +1,48 @@
+main {
+  min-height: 100vh;
+}
+.redBackground {
+    background-color: #e52626;
+    color: white;
+}
+
+.redBackground:hover {
+    background-color: #f08484;
+}
+
+.blueGradientBackground {
+    background:  linear-gradient(rgb(0, 51, 133), rgb(0, 37, 97));
+    color: white;
+}
+
+.lightBlueBackground {
+    background-color: #E9F2FF;
+}
+.h1 {
+    text-align: left;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+.blogText {
+  margin: 1vw 8vw;
+}
+.footer {
+  text-align: center;
+  line-height: 50px; /* Same as height */
+  position: relative;
+  clear: both;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
