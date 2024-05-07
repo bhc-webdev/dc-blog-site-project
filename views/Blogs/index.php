@@ -19,7 +19,7 @@
               <h3 class="mb-0">
                 <a class="text-dark" href="#"><?= htmlspecialchars($blog["title"]) ?></a>
               </h3>
-              <div class="mb-1 text-muted">Nov 12</div>
+              <div class="mb-1 text-muted"><?= htmlspecialchars( $blog["Date"]) ?></div>
               <p class="card-text mb-auto">
                 <?= htmlspecialchars(mb_strlen($blog["text"]) > 200) ? mb_substr($blog["text"], 0, 140) . '...' : $blog["text"]; ?>
               </p>

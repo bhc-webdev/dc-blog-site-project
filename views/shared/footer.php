@@ -1,4 +1,5 @@
-<footer class="bg-body-tertiary text-center">
+</main>
+<footer class="footer bg-body-tertiary text-center">
     <!-- Copyright -->
     <a href="#" class="fa fa-facebook"></a>
     <a href="#" class="fa fa-twitter"></a>

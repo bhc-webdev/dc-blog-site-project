@@ -21,6 +21,7 @@ $router->add("/home", ["controller" => "home", "action" => "index"]);
 $router->add("/blogs", ["controller" => "blogs", "action" => "index"]);
 $router->add("/blogs/show", ["controller" => "blogs", "action" => "show"]);
 $router->add("/{controller}/{action}");
+$router->add("/about", ["controller" => "About", "action" => "index"]);
 
 $params = $router->matchRoute($path);
 if (!$params) {
