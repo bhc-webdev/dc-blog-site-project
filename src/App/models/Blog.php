@@ -11,7 +11,7 @@ class Blog
               host={$_ENV['DB_HOST']};
               dbname={$_ENV['DB_NAME']};
               charset=utf8;
-              port=3304";
+              port=21";
 
       return new PDO($dsn, $_ENV['DB_USER'], $_ENV['DB_PASSWORD'], [
           PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

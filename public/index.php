@@ -8,7 +8,9 @@ error_reporting(E_ALL);
 // Local
 define("ROOT_PATH", dirname(__DIR__));
 
-$path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+define("WEB_ROOT", "/webdev/atdc/public/");
+
+$path = str_replace(WEB_ROOT, "", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 
 spl_autoload_register(function (string $class_name) {
 

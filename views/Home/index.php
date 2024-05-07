@@ -6,7 +6,7 @@
         and more!
       </p>
       <button class="btn redBackground btn-lg" type="button">
-        <a href="blogs" style="color: inherit; text-decoration: inherit; font-weight: inherit;">All Blog Posts</a>
+        <a href="<?= WEB_ROOT ?>Blogs" style="color: inherit; text-decoration: inherit; font-weight: inherit;">All Blog Posts</a>
       </button>
     </div>
   </div>

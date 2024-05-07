@@ -5,7 +5,7 @@
             Look through all of the content posted by students and staff!
         </p>
         <button class="btn redBackground btn-lg" type="button">
-        <a href="home" style="color: inherit; text-decoration: inherit; font-weight: inherit;">Back to Home</a> 
+        <a href="<?= WEB_ROOT ?>home" style="color: inherit; text-decoration: inherit; font-weight: inherit;">Back to Home</a> 
       </button>
     </div>
 </div>
