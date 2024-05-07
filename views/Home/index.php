@@ -6,7 +6,7 @@
         and more!
       </p>
       <button class="btn redBackground btn-lg" type="button">
-      <a href="blogs" style="color: inherit; text-decoration: inherit; font-weight: inherit;">All Blog Posts</a> 
+        <a href="blogs" style="color: inherit; text-decoration: inherit; font-weight: inherit;">All Blog Posts</a>
       </button>
     </div>
   </div>
@@ -14,18 +14,14 @@
     <div class="row mb-2">
       <?php foreach ($blogs as $blog) : ?>
         <div class="col-md-6">
-          <div class="card flex-md-row mb-4 shadow-sm h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-              <h3 class="mb-0">
-                <a class="text-dark" href="#"><?= htmlspecialchars($blog["title"]) ?></a>
-              </h3>
-              <div class="mb-1 text-muted"><?= htmlspecialchars( $blog["Date"]) ?></div>
-              <p class="card-text mb-auto">
-                <?= htmlspecialchars(mb_strlen($blog["text"]) > 200) ? mb_substr($blog["text"], 0, 140) . '...' : $blog["text"]; ?>
-              </p>
-              <a href="./blogs/<?= htmlspecialchars($blog['id']) ?>/show">Continue reading</a>
+          <div class="card" style="width: 18rem;">
+            <img src="/public/images/<?= htmlspecialchars($blog['imageLink']) ?>.jpg" class="card-img-top" alt="Stock Blog Image">
+            <div class="card-body">
+              <h5 class="card-title"><?= htmlspecialchars($blog["title"]) ?></h5>
+              <div class="mb-1 text-muted"><?= htmlspecialchars($blog["Date"]) ?></div>
+              <p class="card-text"><?= htmlspecialchars(mb_strlen($blog["text"]) > 200) ? mb_substr($blog["text"], 0, 140) . '...' : $blog["text"]; ?></p>
+              <a href="./blogs/<?= htmlspecialchars($blog['id']) ?>/show" class="btn redBackground">Continue Reading</a>
             </div>
-            <img class="card-img-right flex-auto d-none d-lg-block"src="images/<?= htmlspecialchars($blog['imageLink'])?>.jpg" alt="Blog Image" />
           </div>
         </div>
       <?php endforeach; ?>
