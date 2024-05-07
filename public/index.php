@@ -6,11 +6,20 @@ error_reporting(E_ALL);
 // !Change URL for every site!
 // $path = str_replace("/webdev/SteveHarvey/mvc-views/", "/", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 // Local
+define("ROOT_PATH", dirname(__DIR__));
+
 $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 spl_autoload_register(function (string $class_name) {
-    require "src/" . str_replace("\\", "/", $class_name) . ".php";
+
+    require ROOT_PATH . "/src/" . str_replace("\\", "/", $class_name) . ".php";
 });
+
+$dotenv = new Framework\Dotenv;
+
+$dotenv->load(ROOT_PATH . "/.env");
+
+// print_r($_ENV);
 
 $router = new Framework\Router;
 

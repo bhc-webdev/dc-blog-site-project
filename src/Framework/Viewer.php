@@ -10,7 +10,7 @@ class Viewer
 
         ob_start();
 
-        require "views/$template";
+        require ROOT_PATH . "/views/$template";
 
         return ob_get_clean();
     }
