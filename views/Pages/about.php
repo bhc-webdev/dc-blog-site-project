@@ -6,33 +6,29 @@
   <div class="container">
     <div class="row mb-2">
       <div class="col-md-6">
-        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
+      <div class="card" style="width: 18rem;">
+          <img src="/public/images/SS1.jpg" class="card-img-top" alt="Sherri's picture">
+          <div class="card-body">
             <h3 class="mb-0">
-              <a class="text-dark" href="#">Sherri Stidham</a>
+              <a class="card-title" href="#">Sherri Stidham</a>
             </h3>
-            <div class="mb-1 text-muted">Nov 12</div>
-            <p class="card-text mb-auto">
-              Information on Sherri
+            <p class="card-text">
+            Learning is a passion of mine. Getting to go back to school and be so close to graduating is such an amazing feeling and truly a dream come true.
             </p>
-            <a href="#">Continue reading</a>
           </div>
-          <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap" />
         </div>
       </div>
       <div class="col-md-6">
-        <div class="card flex-md-row mb-4 shadow-sm h-md-250">
-          <div class="card-body d-flex flex-column align-items-start">
+        <div class="card" style="width: 18rem;">
+          <img src="/public/images/MMoten.jpg" class="card-img-top" alt="Marc's picture">
+          <div class="card-body">
             <h3 class="mb-0">
-              <a class="text-dark" href="#">Marc Moten</a>
+              <a class="card-title" href="#">Marc Moten</a>
             </h3>
-            <div class="mb-1 text-muted">Nov 11</div>
-            <p class="card-text mb-auto">
-              Information about Marc
+            <p class="card-text">
+              IT is where I thrive. I enjoy using my schooling to create interesting and dynamic sites.
             </p>
-            <a href="#">Continue reading</a>
           </div>
-          <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb" alt="Card image cap" />
         </div>
       </div>
     </div>
